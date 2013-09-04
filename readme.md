@@ -14,11 +14,11 @@ Foundation self declares to be the most advanced responsive front-end framework 
 
 ## How To 'Install' It ##
 
-First, make sure you have [Node](http://nodejs.org), Ruby and the Jekyll gem installed (```gem install jekyll```).
+First, make sure you have [Node](http://nodejs.org), [Ruby](https://www.ruby-lang.org/en/) and the [Jekyll](http://jekyllrb.com/) gem installed (```gem install jekyll```).
 
 Then, just download the .zip or
 
-	```git clone git@github.com:rememberlenny/Jekyll-Foundation-SASS-Grunt.git```
+	git clone git@github.com:rememberlenny/Jekyll-Foundation-SASS-Grunt.git
 
 
 ## How To 'Run' It ##
@@ -86,3 +86,7 @@ Comments, improvements, and suitcases filled with money can be sent to lenny@atr
 
 
 -Lenny
+
+## Thanks ##
+
+Thanks to [Dave Cohen](https://github.com/groovemonkey) for making [jekyll-foundation-base](https://github.com/groovemonkey/jekyll-foundation-base).
