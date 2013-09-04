@@ -1,4 +1,4 @@
-# Jekyll + Foundation SCSS + Grunt #
+# Jekyll + Foundation SCSS #
 
 Foundation self declares to be the most advanced responsive front-end framework in the world.
 
@@ -8,18 +8,16 @@ Foundation self declares to be the most advanced responsive front-end framework 
 * the entire foundation framework
 * a default html5 template in _layouts
 * a default nav bar under _includes
-* orbit slideshow js code in _includes, ready to be called on any page
 * default index and 404 page, along with 3 other empty pages
 
 
 ## How To 'Install' It ##
 
-First, make sure you have [Node](http://nodejs.org), [Ruby](https://www.ruby-lang.org/en/) and the [Jekyll](http://jekyllrb.com/) gem installed (```gem install jekyll```).
+First, make sure you have [Ruby](https://www.ruby-lang.org/en/) and the [Jekyll](http://jekyllrb.com/) gem installed (```gem install jekyll```).
 
 Then, just download the .zip or
 
-	git clone git@github.com:rememberlenny/Jekyll-Foundation-SASS-Grunt.git
-
+	git clone git@github.com:rememberlenny/Jekyll-Foundation-SASS.git
 
 ## How To 'Run' It ##
 
@@ -27,13 +25,10 @@ Then, just download the .zip or
 To set up a local development server use the command ```jekyll serve```. The files from ```_site``` will be served to [http://localhost:4000](http://localhost:4000) by default.
 
 **SASS -> CSS**
-To compile the SASS files into CSS, run ```compass watch```. Files from ```raw/sass/*``` will render to ```_source/assets/css```.
-
-**Compiling Javascript**
-To concatnate the Javascript files into a single file, run ```grunt```. Javascript in ```raw/javascripts``` will render to ```_source/assets/js/```.
+To compile the SASS files into CSS, run ```compass watch```. Files from ```sass/*``` will render to ```_source/assets/css```.
 
 **Preparing for build**
-After you have compiled your SASS and concatnated your Javascript, its time build. Build for deploymentwith the command ```jekyll build```. The files will render to ```_site```.
+After you have compiled your SASS with Compass, its time build. Build for deploymentwith the command ```jekyll build```. The files will render to ```_site```.
 
 
 ## Tutorial: ##
@@ -89,4 +84,4 @@ Comments, improvements, and suitcases filled with money can be sent to lenny@atr
 
 ## Thanks ##
 
-Thanks to [Dave Cohen](https://github.com/groovemonkey) for making [jekyll-foundation-base](https://github.com/groovemonkey/jekyll-foundation-base).
+Thanks to [Dave Cohen](https://github.com/groovemonkey) for making [jekyll-foundation-base](https://github.com/groovemonkey/jekyll-foundation-base):.
