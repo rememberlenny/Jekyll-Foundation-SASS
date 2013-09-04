@@ -1,13 +1,11 @@
-# Jekyll + Foundation CSS #
+# Jekyll + Foundation SCSS + Grunt #
 
-I love Zurb's Foundation framework, and Jekyll is a great tool for preventing code duplication while building static HTML/CSS/js websites.
-
-This tool really just exists to create a "base" directory for starting new projects.
+Foundation self declares to be the most advanced responsive front-end framework in the world.
 
 ## What's Included: ##
 * all the directories that Jekyll needs to compile your static site
 * jQuery
-* a stripped-down version of the foundation framework -- just the grid and orbit slideshow.
+* the entire foundation framework
 * a default html5 template in _layouts
 * a default nav bar under _includes
 * orbit slideshow js code in _includes, ready to be called on any page
@@ -16,22 +14,29 @@ This tool really just exists to create a "base" directory for starting new proje
 
 ## How To 'Install' It ##
 
-First, make sure you have Ruby and the Jekyll gem installed (gem install jekyll).
+First, make sure you have [Node](http://nodejs.org), Ruby and the Jekyll gem installed (```gem install jekyll```).
 
 Then, just download the .zip or
 
-	```git clone git://github.com/groovemonkey/jekyll-foundation-base.git```
+	```git clone git@github.com:rememberlenny/Jekyll-Foundation-SASS-Grunt.git```
 
-this baby and get started! Because now other people are using this now, I wrote a small tutorial (below).
 
-I hope you find this useful; it has certainly made me more productive.
+## How To 'Run' It ##
 
-Cheers!
+**Serving Jekyll**
+To set up a local development server use the command ```jekyll serve```. The files from ```_site``` will be served to [http://localhost:4000](http://localhost:4000) by default.
 
+**SASS -> CSS**
+To compile the SASS files into CSS, run ```compass watch```. Files from ```raw/sass/*``` will render to ```_source/assets/css```.
+
+**Compiling Javascript**
+To concatnate the Javascript files into a single file, run ```grunt```. Javascript in ```raw/javascripts``` will render to ```_source/assets/js/```.
+
+**Preparing for build**
+After you have compiled your SASS and concatnated your Javascript, its time build. Build for deploymentwith the command ```jekyll build```. The files will render to ```_site```.
 
 
 ## Tutorial: ##
-
 
 ### Layouts ###
 
@@ -69,23 +74,7 @@ Foundation's Orbit code is ready to plug into your website; the javascript to tr
     	<img src="foo.jpg" alt="bar">
     </div>
 
-That's it.
-
-
-## Known Issues ##
-
-I haven't thought of a clever way to get jekyll or moustache to automatically apply page-specific HTML IDs to elements, e.g.
-
-"""
-menu.each do |menu_item| 
-	if menu_item.src == current_page_url
-		menu_item.id = "active"
-	end
-end
-"""
-
-I recommend doing this in a Javascript include that you place in the default template, but that will degrade the experience for people who don't let JS execute in their browsers (although those people will probably be used to a degraded web browsing experience...).
-
+For more information see [Zurb's Foundation documentation.](http://foundation.zurb.com/docs/orbit.php)
 
 
 
@@ -93,7 +82,7 @@ I recommend doing this in a Javascript include that you place in the default tem
 
 Have Fun and make some cool websites.
 
-Comments, improvements, and suitcases filled with money can be sent to dave@dave-o-matic.com
+Comments, improvements, and suitcases filled with money can be sent to lenny@atriangle.com
 
 
--Dave
+-Lenny
