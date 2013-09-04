@@ -1,3 +1,7 @@
 title:       A Triangle Jekyll
+author:      Leonard Kiyoshi Bogdonoff
+linkedin:    http://www.linkedin.com/pub/leonard-bogdonoff/25/14b/8a6
+twitter:     rememberlenny
+github:      rememberlenny
 source:      ./_source
 destination: ./_site

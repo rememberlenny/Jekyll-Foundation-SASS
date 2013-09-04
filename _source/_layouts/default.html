@@ -10,7 +10,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>{{ page.title }}</title>
+  <title>{{ site.title }}{{ page.title }}</title>
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="assets/css/app.css">
@@ -37,7 +37,7 @@
 <!-- end wrapper -->	
 </div>
 
-
+{% include footer.html %}
 
   <!-- End Whole-Body Div -->
   </div>
