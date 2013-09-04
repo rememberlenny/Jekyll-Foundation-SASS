@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>{{ page.title }}</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/foundation.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+
+  
+<!-- JS Files -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/foundation.js"></script>
+  	<!-- Initialize JS Plugins -->
+  	<script src="assets/js/app.js"></script>
+
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+</head>
+	<body>
+		
+<!-- Whole Body Div -->
+<div class="row">
+<div class="twelve columns centered">
+
+
+{% include nav.html %}
+
+<!-- Main page content -->
+<div id="wrapper">
+
+
+	{{ content }}	
+
+
+<!-- end wrapper -->	
+</div>
+
+
+
+  <!-- End Whole-Body Div -->
+  </div>
+</div>
+</body>
+</html>
+
+
